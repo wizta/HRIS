@@ -3,7 +3,7 @@ from tkinter import filedialog
 from tkinter import *
 
 root = Tk()
-root.filename =  filedialog.askopenfilename(initialdir = "C:\\Users\marnitw\Desktop\examplefile",title = "Select file",filetypes = (("Text File","*.txt"),("all files","*.*")))
+root.filename =  filedialog.askopenfilename(initialdir = "C:\\Users\marnitw\Desktop\Att_Export\Download",title = "Select file",filetypes = (("Text File","*.txt"),("all files","*.*")))
 print (root.filename)
 
 #start read and remove whitespace
@@ -122,7 +122,7 @@ from tkinter import filedialog
 from tkinter import *
 
 root = Tk()
-root.filename =  filedialog.asksaveasfilename(initialdir = "C:\\Users\marnitw\Desktop\examplefile\Converted",title = "Select file",filetypes = (("Text File","*.txt"),("all files","*.*")))
+root.filename =  filedialog.asksaveasfilename(initialdir = "C:\\Users\marnitw\Desktop\Att_Export\Converted",title = "Select file",filetypes = (("Text File","*.txt"),("all files","*.*")))
 #write into final file
 with open(root.filename,'w')as f:
     f.writelines(finalalign)
